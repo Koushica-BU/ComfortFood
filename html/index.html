@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cravings</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <script
+      src="https://kit.fontawesome.com/9d7c12f408.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section id="landing" class="landing">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="#recipes" class="header__nav-link">Recipes</a></li>
+            <li class="header__nav-item"><a href="#favorites" class="header__nav-link">Favorites</a></li>
+        </ul>
+        <div class="nav__logo">
+            Cozy <strong class="logo__transform">Cravings</strong>
+        </div>
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#gallery" class="header__nav-link">Gallery</a></li>
+            <li class="header__nav-item"><a href="#chef" class="header__nav-link">Team</a></li>
+            <li class="header__nav-item"><a href="mailto:karshicablog0113@gmail.com" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex flex-1">
+        <div class="landing__content row">
+          <div class="landing__about">
+              <h1 class="landing__title">About Cozy Cravings🍲🍂</h1>
+              <p class="landing__description">We believe that food is more than just nourishment; it's comfort,
+                warmth, and a way to bring people together.Whether you're a
+                seasoned chef or just discovering your love for cooking, our
+                collection of recipes is crafted to satisfy your soul and fill
+                your home with delicious aromas. From hearty soups to decadent
+                desserts, each dish is designed to evoke the cozy, comforting
+                vibes that make mealtime special. Join us on a culinary journey
+                where every bite is a hug in disguise!</p>
+              <button class="landing__button">Share New Recipe</button>
+          </div>
+          <div class="scroll__down">
+              <a href="#recipes"><i class="fa-solid fa-angles-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipes">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">Take a bite of my <span class="logo__transform">Comfy food</span></h1>
+          <div class="recipe__list">
+            <div class="recipe-card">
+              <img src="../images/recipes/brocoli fry.jpg" alt="Recipe 1" class="recipe-card__image">
+              <h3 class="recipe-card__title">Brocoli fry</h3>
+              <p class="recipe-card__description">A delicious stir-fry of broccoli florets tossed in aromatic spices for a healthy, savory bite.</p>
+              <button class="recipe-card__button" onclick="showRecipeDetails('recipe1')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <img src="../images/recipes/masala dosa.jpg" alt="Recipe 2" class="recipe-card__image">
+                <h3 class="recipe-card__title">Masala dosa</h3>
+                <p class="recipe-card__description">A crispy, golden crepe filled with spiced potato masala, served with tangy chutney and sambar.</p>
+                <button class="recipe-card__button" onclick="showRecipeDetails('recipe2')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+              <img src="../images/recipes/veg rice.jpg" alt="Recipe 1" class="recipe-card__image">
+              <h3 class="recipe-card__title">Vegetable Rice</h3>
+              <p class="recipe-card__description">A fragrant medley of colorful veggies and basmati rice, cooked with Indian spices for a wholesome meal.</p>
+              <button class="recipe-card__button" onclick="showRecipeDetails('recipe1')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+              <img src="../images/recipes/potato poriyal.jpg" alt="Recipe 1" class="recipe-card__image">
+              <h3 class="recipe-card__title">Potato poriyal</h3>
+              <p class="recipe-card__description">A simple yet flavorful South Indian stir-fry of tender potatoes with mustard seeds and coconut.</p>
+              <button class="recipe-card__button" onclick="showRecipeDetails('recipe1')">View Recipe</button>
+            </div>
+            <div class="recipe-card">
+              <img src="../images/recipes/chicken biryani.jpg" alt="Recipe 1" class="recipe-card__image">
+              <h3 class="recipe-card__title">Chicken biryani</h3>
+              <p class="recipe-card__description">An aromatic, layered rice dish with succulent chicken, fragrant spices, and caramelized onions.</p>
+              <button class="recipe-card__button" onclick="showRecipeDetails('recipe1')">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="favorites">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">Our Favorites</h1>
+          <div class="favorites__grid">
+              <div class="favorites__item">
+                  <img src="../images/favorites/biryani.jpg" alt="Favorite Recipe 1" class="favorites__image">
+                  <h3 class="favorites__title">Biryani</h3>
+              </div>
+              <div class="favorites__item">
+                  <img src="../images/favorites/grilled salmon.jpg" alt="Favorite Recipe 2" class="favorites__image">
+                  <h3 class="favorites__title">Grilled Salmon with Cilantro-line rice</h3>
+              </div>
+              <div class="favorites__item">
+                  <img src="../images/favorites/rice and chicken.jpg" alt="Favorite Recipe 3" class="favorites__image">
+                  <h3 class="favorites__title">Rice with Chicken Gravy</h3>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">Recipe Gallery</h1>
+          <div class="gallery__grid">
+              <img src="../images/recipes/brocoli fry.jpg" alt="Gallery Image 1" class="gallery__image">
+              <img src="../images/recipes/chicken biryani.jpg" alt="Gallery Image 2" class="gallery__image">
+              <img src="../images/favorites/grilled salmon.jpg" alt="Gallery Image 3" class="gallery__image">
+              <img src="../images/favorites/biryani.jpg" alt="Gallery Image 4" class="gallery__image">
+              <img src="../images/recipes/chicken curry.jpg" alt="Gallery Image 5" class="gallery__image">
+              <img src="../images/recipes/paneer.jpg" alt="Gallery Image 6" class="gallery__image">
+              <img src="../images/recipes/masala dosa.jpg" alt="Gallery Image 7" class="gallery__image">
+              <img src="../images/favorites/rice and chicken.jpg" alt="Gallery Image 8" class="gallery__image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chef">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">Meet our Team</h1>
+          <div class="chef__list">
+            <div class="chef__bio">
+              <img src="../images/chef/girl_chef.jpg" alt="Chef Image" class="chef__image">
+              <div class="chef__info">
+                  <h3 class="chef__name">Koushica</h3>
+                  <p class="chef__description">"Hi! I'm Koushica, and my love for cooking began in my kitchen, where comfort food was at the heart of every meal. I enjoy blending traditional flavors with a modern twist, creating dishes that bring warmth and joy. For me, cooking is all about crafting meals that make people feel at home."</p>
+              </div>
+            </div>
+            <div class="chef__bio">
+              <img src="../images/chef/boy_chef.jpeg" alt="Chef Image" class="chef__image">
+              <div class="chef__info">
+                  <h3 class="chef__name">Karthik</h3>
+                  <p class="chef__description">"Hey there! I'm Karthik, and I'm passionate about creating comfort food that brings people together. I love experimenting with flavors and turning everyday ingredients into something special. For me, cooking is all about making delicious, feel-good meals that nourish both body and soul."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Cozy Cravings. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
